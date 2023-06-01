@@ -22,6 +22,42 @@
 			height: auto;
 		  }
 		  </style>
+		<style>
+			.container {
+			  display: flex;
+			  align-items: center;
+			}
+			.image {
+    			flex: 0 0 auto;
+    			max-width: 50%;
+    			margin-right: 20px;
+  			}
+			.text {
+			  flex: 1;
+			  text-align: right;
+			}
+			.container-reverse {
+    			flex-direction: row-reverse;
+			
+			}
+			
+			.container .image,
+			.container-reverse .image {
+				margin-bottom: 20px;
+			}
+
+			.image img {
+    			max-width: 95%; 
+    			height: auto; 
+  			}
+
+			.second-image img {
+				max-width: 90%;
+				height: auto;
+				margin-left: auto;
+			}
+			
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -56,19 +92,25 @@
 									
 									<h1>Project Phoenix<br />
 									</h1>
-									<p>The Rocket Propelled Lander Project, or Project Phoenix, is  <br />
+									<p>The Rocket Propelled Lander (RPL) Project, or Project Phoenix, is  <br />
 									 Cal Poly Pomona's self-landing rocket program with Bronco Space<br />
 								</p>
 								</header>
 								<div class="video"><video src="images/TVC1080p.mp4" alt="" controls autoplay></div>
-								<p>I am currently a Student Guidance, Navigation, and Controls Engineer. My work consisted of MATLAB coding and Simulink to simulate the behavior of the rocket's thrust vector control system as it moves through the air. The video shown is a simulation of our first prototype. The simulation is ran using C++ and Simulink code.</p>
+								<p>I am currently a Student Guidance, Navigation, and Controls Engineer for the Rocket Propelled Lander Project. My work consisted of MATLAB coding and Simulink to simulate the behavior of the rocket's thrust vector control system as it moves through the air. The video shown is a flight simulation of our first prototype. The simulation is ran using C++ and Simulink code. </p>
 							
 					</header>
-					<div class="image main"><img src="images/AB.jpg" alt="" /></div>
-					<p>This is a picture of what our lander looks like in Solidworks Fusion360</p>
+					<div class="container"><div class="image main"><img src="images/landerrender.png" alt="" ></div>
+						<div class="text" style="font-size: 15px;">
+							<p>The project's initial mission is to become the school's first rocket lander. This system would eventually be intended to drop deliverables on a lunar surface, such as rovers, or to conduct data collection close to the lunar surface and the regolith. The picture shown is a render of our RPL System. </p>
+						</div>
+					</div>
+
 					</header>
-					<div class="image main"><img src="images/portfolio1.png" alt="" /></div>
-                    <p>To give our team members something to visualize and to make sure that we fully understand the concept of a thrust vector controlled system, the team and I created an inverted pendulum as a stepping stone to different versions</p>
+					<div class="container container-reverse"><div class="image main second-image"><img src="images/inverted.jpg" alt="" /></div>
+						<div class="text" style="font-size: 15px;">
+                    		<p>During the Spring semester of 2023, to give all team members something to visualize and to better understand the concept of a thrust vector controlled system. An old 3D printer was taken apart and repurposed to act as an inverted pendulum to balance an Inertial Measurement Unit (IMU) and would be programmed through an Arduino using Simulink. This image is our first built inverted pendulum.</p>
+						</div>
 					</div>
 
 				<!-- Footer -->
