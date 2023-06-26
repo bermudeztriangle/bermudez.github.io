@@ -11,6 +11,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.set {
+			display: flex;
+			justify-content: center;
+			margin-top: 2rem;
+		  }
+	  
+		  .set set {
+			width: 100%;
+			height: auto;
+		  }
+		  .centered-image {
+			max-width: 100%;
+			height: auto;
+		  }
+		  </style>
+		<style>
+			.container {
+			  display: flex;
+			  align-items: center;
+			}
+			.image {
+    			flex: 0 0 auto;
+    			max-width: 50%;
+    			margin-right: 20px;
+  			}
+			.text {
+			  flex: 1;
+			  text-align: right;
+			}
+			.container-reverse {
+    			flex-direction: row-reverse;
+			
+			}
+			
+			.container .image,
+			.container-reverse .image {
+				margin-bottom: 20px;
+			}
+
+			.image img {
+    			max-width: 95%; 
+    			height: auto; 
+  			}
+
+			.second-image img {
+				max-width: 90%;
+				height: auto;
+				margin-left: auto;
+			}
+			
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -30,7 +82,7 @@
 							<!--<li><a href="elements.html">Contact me</a></li>-->
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/adrian-c-bermudez/" class="icon brands fa-linkedin" targer="_blank"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.linkedin.com/in/adrian-c-bermudez/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://www.instagram.com/a_dawg_03/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 							<li><a href="https://github.com/bermudeztriangle" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 						</ul>
@@ -45,20 +97,27 @@
 									
 									<h1>Balloon Launch Assessment Directive for Everyone<br />
 									</h1>
-									<p>The Balloon Launch Assessment Directive for Everyone, or BLADE, is the quickest way for students to gain the most experience.<br />
-									 Groups of students work together to design a mission for a 1-U satellite<br />
+									<p>The Balloon Launch Assessment Directive for Everyone, or BLADE, is the quickest way for students to gain the most experience.
+										<br />
 								</p>
 								</header>
-								<div class="image main"><img src="images/StarWars.jpg" alt="" /></div>
-								<p>I was a team leader in the BLADE program. I led a team of 7 multidisciplinary first year students to design a project. Our project name was "Luminosity"</p>
-								<p>The project's mission was to collect and measure light pollution on the ground. We went through a long process with multiple presentations including CoDR, PDR, CDR, and other presentations that were all shown to industry engineers. This is probably one of my favorite projects to talk about because it fell slightly short. Despite this, it was one of my greatest learning experiences that inspired me to keep working hard. In doing so, for the academic year of 2023-2024, I became a part of Bronco Space's Executive Board as Engineering Coordinator.  </p>
-							</section>
+								<div class="set"><img src="images/Luminosity.png" alt="" class="centered-image"></div>
+								<p>As the team leader of a team consisting of 7 first-year multidisciplinary engineering students, my responsibility was to design a 1-U CubeSat. 
+									The project's primary objective was to assess and quantify ground-level light pollution. We underwent an extensive process, including several presentations such as CoDR, PDR, CDR, and other showcases, which were all delivered to industry professionals. This particular project holds a special place in my heart as it presented valuable lessons, despite falling slightly short of expectations. The experience served as a catalyst for my personal growth, motivating me to strive for excellence. Consequently, for the academic year of 2023-2024, I assumed the role of Engineering Coordinator within Bronco Space's esteemed Executive Board.
+								</p>
+							
 					</header>
-					<div class="image main"><img src="images/Luminosity.png" alt="" /></div>
-					<p>The avionics were ran using a raspberry pi, heated using kapton heaters, and powered by 18650 Lithium ion batteries. </p>
+					<div class="container"><div class="image main"><img src="images/blade2.png" alt="" ></div>
+						<div class="text" style="font-size: 20px;">
+							<p>Working with about 40 other students and 12 in my subteam from a variety of disciplines has been an incredible experience.</p>
+						</div>
+					</div>
+
 					</header>
-					<div class="image main"><img src="images/portfolio2.png" alt="" /></div>
-                    <p></p>
+					<div class="container container-reverse"><div class="image main second-image"><img src="images/blade5.png" alt="" /></div>
+						<div class="text" style="font-size: 20px;">
+                    		<p>Currently, the team and I are working on building the next model for our project. The picture on the right is of a hot wire foam cutter that I built being heated up by a power supply. With this, we can cut foam into NACA0012 airfoils to be used as templates for our carbon fiber airfoil. </p>
+						</div>
 					</div>
 
 				<!-- Footer -->
